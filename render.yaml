@@ -1,0 +1,34 @@
+services:
+  - name: ccu-website
+    type: web
+    env: php
+    plan: free
+    region: ohio
+    buildCommand: |
+      npm install
+      npm run build
+      composer install --optimize-autoloader --no-dev
+      php artisan key:generate
+      php artisan config:cache
+      php artisan route:cache
+      php artisan view:cache
+    startCommand: |
+      php artisan serve --host 0.0.0.0 --port 10000
+    phpVersion: '8.2'
+    # envVars:
+    #   - key: APP_ENV
+    #     value: production
+    #   - key: APP_KEY
+    #     sync: false  # Let Laravel generate this key
+    #   - key: APP_URL
+    #     value: https://my-laravel-tailwind-app.onrender.com
+    #   - key: DB_CONNECTION
+    #     value: mysql
+    #   - key: DB_DATABASE
+    #     value: my_database
+    #   - key: DB_USERNAME
+    #     value: my_username
+    #   - key: DB_PASSWORD
+    #     value: my_password
+    #   - key: NODE_ENV
+    #     value: production
