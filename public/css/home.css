@@ -1,0 +1,168 @@
+#carouselExampleFade {
+    height: 550px;
+}
+
+.carousel-item {
+    height: 550px;
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item .black-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+
+
+}
+
+.text-animation {
+    border-radius: .5rem;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 8rem;
+    width: 45%;
+}
+
+.text-animation .background {
+    background: white;
+    opacity: .8;
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.text-animation .background {
+    background: white;
+    opacity: .8;
+    z-index: 1;
+    position: absolute;
+    animation-delay: 1s;
+    -webkit-animation: bacckground-appear 1s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bacckground-appear 1s 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.text-animation .content {
+    padding: 1rem;
+    z-index: 5;
+    /* min-height: 10rem; */
+    position: relative;
+}
+
+.move-bottom {
+    animation-delay: 1s;
+    -webkit-animation: text-move 3s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-move 3s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.move-top {
+    animation-delay: 1s;
+    -webkit-animation: text-move-inverse 3s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-move-inverse 3s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.animations {
+    overflow: hidden;
+}
+
+.main {
+    padding-top: 1px;
+}
+.animations .main,
+.animations .title {
+    height: 5rem;
+    overflow: hidden;
+}
+
+.animations .button-container {
+    height: 3rem;
+    overflow: hidden;
+}
+
+.animations div .text,
+.animations .button-container button {
+    animation-delay: 2s;
+    -webkit-animation: text-move 3s 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-move 2.1s 2.1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.slide-left {
+    animation-name: slideLeft;
+    animation-duration: 2s;
+}
+
+.slide-right {
+    animation-name: slideRight;
+    animation-duration: 2s;
+}
+
+@keyframes slideLeft {
+    from {
+        background-color: black;
+        width: 100%;
+    }
+
+    to {
+        background-color: transparent;
+        width: 0;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        background-color: black;
+        width: 0;
+    }
+
+    to {
+        background-color: transparent;
+        width: 100%;
+    }
+}
+
+
+@keyframes text-move {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes text-move-inverse {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes bacckground-appear {
+    from {
+        transform: translateY(-1rem);
+        height: 0%;
+        width: 0%;
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+
+        opacity: .8;
+        z-index: 1;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+}

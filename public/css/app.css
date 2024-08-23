@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Define custom colors as CSS variables */
+:root {
+    --color-violet: #46007F;
+    --color-red: #E20000;
+    --color-yellow: #FFFF1F;
+    --color-grey: #746360;
+    --color-grey2: #888888;
+    --color-grey3: #a9a9a9;
+    --color-greylight: #c7bcba;
+    --color-white2: #f9f9f9;
+    --color-header: #3f4444;
+    --color-green: #009E34;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('/fonts/Roboto_Condensed/RobotoCondensed-VariableFont_wght.ttf') format('truetype'),
+         url('/fonts/Roboto_Condensed/RobotoCondensed-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

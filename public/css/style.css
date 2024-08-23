@@ -1,0 +1,89 @@
+@import url(app.css);
+@import url(../fontawesome/css/fontawesome.css);
+@import url(../boostrap/css/bootstrap.min.css);
+@import url(header.css);
+@import url(footer.css);
+@import url(home.css);
+@import url(main-body.css);
+@import url(style-main.css);
+
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+body {    
+    font-family: 'Roboto Condensed', 'sans-serif';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2, .h1, .h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 800;
+    line-height: 1.42857143;
+    color: var(--color-header);
+}
+
+.inner-header {
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0; */
+}
+.background-overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .7);
+    filter: blur(8px);
+    z-index: 1; 
+}
+.inner-header-content {
+    padding: 1% 10%;
+    z-index: 2;
+    position: relative;
+}
+.inner-header-content h1 {
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.inner-header-detail {
+    padding: 1% 0;
+    font-size: 15px;
+    display: ruby;    
+}
+.inner-header-detail a{
+    color: var(--color-grey);
+    font-weight: 600;
+}
+.inner-header-detail a::after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 10px;   
+    margin-right: 13px;   
+    color: var(--color-grey);
+    display: inline-block;
+}
+
+.main-content {
+    padding: 2% 10%;
+    text-align: justify;
+    line-height: 1.5;
+}
+

@@ -1,0 +1,244 @@
+
+.header-top {
+    padding: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-navbar {
+    background-color: #fff;
+    margin: 1% 10%;
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    line-height: 80px;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    float: right; 
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a {
+    color: var(--color-header);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+nav ul li:not(:first-child) a::after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 10px;
+    color: var(--color-header);
+}
+
+a.active, a:hover {
+    color: var(--color-violet);
+}
+
+
+
+/* Style the summary tag to create the hamburger menu icon */
+details#menu summary {
+    display: none;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    right: 0;
+}
+
+/* Style the dropdown links */
+details[open]#menu > ul {
+    list-style-type: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    height: 0;
+    transition: all 1s ease;
+    padding-right: 28%;
+    top: 50px;
+}
+
+details#menu > ul >  li > a {
+    text-decoration: none;
+    color: var(--color-header);
+    padding: 8px 12px;
+    display: block;
+    transition: background-color 2s ease-in-out;
+}
+
+details#menu > ul > li > a:hover,
+details#menu > ul > li > a:active {
+    color: var(--color-violet);
+}
+
+
+/* Adjust the style of the megamenu */
+.megamenu {
+    background-color: #fff;
+    position: absolute;
+    left: -240px;
+    right: 0;
+    top: 75px;
+    padding: 0 30px;
+    /* display: block;  */
+    display: none; 
+    z-index: 1000;
+}
+nav ul li:hover .megamenu {
+    display: block;
+}
+.megamenu-row {
+    display: flex;
+    justify-content: space-between;
+}
+.megamenu h4{
+    color: var(--color-violet);
+    font-weight: bold;
+}
+.megamenu ul{
+    position: absolute;
+    top: 50px;
+    padding-top: 15px;
+    padding-right: 5%;
+}
+#megamenu3 ul, #megamenu4 ul{
+    padding-top: 0;
+    margin-top: -30px;
+    margin-left: -15px;
+}
+.megamenu ul li{
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 500;
+    flex: auto;
+}
+#megamenu3 ul li{
+    font-size: 13px;
+}
+.megamenu ul li a{
+    padding: 8px 0;
+    align-items: start;
+}
+.megamenu a::after {
+    display: none;
+}
+#megamenu1 a::before, #megamenu2 a::before {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 7px;    
+    color: var(--color-grey);
+    display: inline-block;
+}
+.megamenu ul li a:hover {
+    color: #000;
+}
+#megamenu3 ul li a:hover, #megamenu4 ul li a:hover {
+    color: #000;
+    font-weight: bold;
+    transition: all .8s ease-in-out;
+}
+#megamenu1 ul li a:hover::before, #megamenu2 ul li a:hover::before {
+    content: '\f101';
+    margin-right: 12px;
+    transition: all .8s ease-in-out;
+}
+.megamenu ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    flex-direction: column; 
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-greylight);
+}
+.col4 {
+    width: 33.333333333%;
+    position: relative;
+    left: 0;
+}
+.col6 {
+    width: 50%;
+    position: relative;
+    left: 0;
+}
+
+
+/* Media Queries for responsiveness */
+@media (max-width: 1052px) {
+    details#menu summary {
+        display: block;
+    }
+
+    details[open]#menu ul {
+        font-size: 13.4px;
+        display: flex;
+        top: 87px;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1020px) {
+    details[open]#menu ul {
+        margin-top: 35px;
+        padding: 0;
+        left: 0;
+        font-size: 14px;
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+    }
+    details#menu ul li:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        flex-direction: column; 
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-grey);
+    }
+    nav ul li {
+        display: inline-block;
+        line-height: 45px;
+        font-weight: bold;
+        position: initial;
+    }    
+    .logo {
+        width: 70px;
+    }
+
+    .megamenu {
+        position: static;
+        width: 100%;
+        display: none;
+    }
+    nav ul li:focus-within .megamenu {
+        display: block;
+    }
+}
