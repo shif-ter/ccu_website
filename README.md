@@ -1,106 +1,66 @@
-# Centre Catholique Universitaire (CCU) Website
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-Welcome to the official website repository of the Centre Catholique Universitaire (CCU), located in Bangui, Central African Republic. This repository contains the source code and resources for the CCU website.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## Table of Contents
+## About Laravel
 
-- [About CCU](#about-ccu)
-- [Contact Information](#contact-information)
-- [Domaines](#domaines)
-- [Installation](#installation)
-- [Contributing](#contributing)
-- [License](#license)
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## About CCU
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-The Centre Catholique Universitaire (CCU) is an educational and spiritual institution that offers various certified training programs, professional youth training, spiritual and psychological support, and numerous services including a library and cafeteria.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Contact Information
+## Learning Laravel
 
-- **Address:** Avenue des Martyrs, Rue Grimalé (en face de la Primature), BP 2931, BANGUI – République Centrafricaine
-- **Website:** [www.ccubangui.com](http://www.ccubangui.com)
-- **Email:** [info@ccubangui.com](mailto:info@ccubangui.com)
-- **Phone:** (+236) 75 07 15 12 / 72 87 00 73 / 70 70 99 91
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-## Domaines
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-### Formation au CCU
-1. **Certified Training Programs**
-    - **Informatics Courses**
-      - Module 1: Windows, Word, Excel
-      - Module 2: PowerPoint, Publisher, Internet
-      - Module 3: Advanced Excel
-      - Module 4: Databases and Access
-    - Conflict Analysis and Management
-    - Psycho-social Agents
-    - Humanitarian Logistics and Transport
-    - Humanitarian Program Coordination
-    - Female Leadership (nine training modules)
-    - Data Entry Operator, Office Secretary, and Administrative Writing
-    - English, French, and Sango Languages
-    - Travel Agency for Air Travel – Facilitators
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-2. **Online Training**
-    - University degrees with CERAP-UNIVERSITÉ JESUITE D’ABIDJAN (Côte d’Ivoire) and JWL (Jesuit Worldwide Learning)
+## Laravel Sponsors
 
-3. **Professional Youth Training**
-    - Direct apprenticeship programs
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Youth Support at CCU
-1. **CCU Information, Education, and Listening Center (CIEE/CCU)**
-    - Youth Mobilization Activities
-    - Youth Training
-    - Spiritual Support for Youth
-    - Psychological and Social Support for Youth
-    - HIV/AIDS Awareness and Compassionate Engagement
-    - HIV/AIDS Testing
-    - CIEE-News
+### Premium Partners
 
-2. **Peace Volunteers Network (RVP)**
-    - Youth Awareness and Mobilization
-    - Youth Training
-    - Peace Actions
-
-### CCU Services
-- **CCU Library**
-  - 3500 Scientific Books
-  - Reading Room with Internet-Connected Computers
-  - Online Consultation Room
-  - Printing Room
-- **Cafeteria**
-
-### University Chaplaincy
-- **Masses**
-  - Daily Masses at 6 AM
-  - Sunday Mass at 8 AM
-  - Student Mass on Tuesdays and Fridays at 12:15 PM
-  - Staff Mass on Wednesdays at 12 PM
-- **Academic Conferences**
-- **Cultural Activities and Certificate/Diploma Awarding Ceremonies**
-
-### Other Jesuit Apostolic Activities in Central Africa
-- **Jesuit Refugee Service (JRS)**
-- **Pope Francis School Complex** (from kindergarten to secondary school)
-
-## Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/ccu-website.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd ccu-website
-    ```
-3. Install the dependencies:
-    ```bash
-    npm install
-    ```
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
 ## Contributing
 
-We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for more details on how to get started.
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+
+## Code of Conduct
+
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+
+## Security Vulnerabilities
+
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
