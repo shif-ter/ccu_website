@@ -245,3 +245,38 @@
         padding: 0.5rem 1rem;
     }
 }
+
+
+
+.counter {
+    margin: 0 10%;
+    padding-top: 3%;
+    padding-bottom: 8%;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center;
+    line-height: 1.2;
+    color: var(--color-header);
+}
+
+.counter-item {
+    flex: 1 1 45%;  /* Each item takes up about 45% of the row */
+    max-width: 45%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+}
+.counter-item i {
+    font-size: 28px;
+}
+.counter-item h5 {
+    margin: 10px 0 0;
+    font-size: 1rem;
+}
+
+@media (min-width: 855px) {
+    .counter-item {
+        flex: 1 1 25%;  /* On larger screens, each item takes up 20% of the row */
+        max-width: 25%;
+    }
+}
