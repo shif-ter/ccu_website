@@ -46,7 +46,7 @@
             <section class="detail">
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
-                        <div class="card">
+                        <div class="card"style="pointer-events: none">
                             <div class="card-body">
                                 <h2 class="card-title">Bibliothèque</h2>
                                 <p class="card-text">                            
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="card">
+                        <div class="card"style="pointer-events: none">
                             <div class="card-body">
                                 <h2 class="card-title">Restauration</h2>
                                 <p class="card-text">

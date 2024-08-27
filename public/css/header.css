@@ -109,7 +109,6 @@ details#menu > ul > li > a:active {
     right: 0;
     top: 75px;
     padding: 0 30px;
-    /* display: block;  */
     display: none; 
     z-index: 1000;
 }
@@ -123,6 +122,8 @@ nav ul li:hover .megamenu {
 .megamenu h4{
     color: var(--color-violet);
     font-weight: bold;
+    position: relative;
+    top: 40px;
 }
 .megamenu ul{
     position: absolute;
@@ -210,6 +211,10 @@ nav ul li:hover .megamenu {
         display: flex;
         top: 87px;
         justify-content: flex-start;
+    }
+
+    .megamenu h4 {
+        top: 0;
     }
 }
 
