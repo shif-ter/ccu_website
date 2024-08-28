@@ -20,3 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
     unitsCountUp.start();
     professorsCountUp.start();
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var header = document.querySelector("header");
+    // var body = document.getElementById("carouselExampleFade");
+    var prevScrollPos = window.pageYOffset;
+
+    window.addEventListener("scroll", function () {
+        var currentScrollPos = window.pageYOffset;
+
+        if (prevScrollPos > currentScrollPos) {
+            header.classList.remove("sticky");
+            // body.style.marginTop = "0";
+        } else {
+            header.classList.add("sticky");
+            // body.style.marginTop = "155px";
+        }
+        prevScrollPos = currentScrollPos;
+    });
+});

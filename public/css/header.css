@@ -1,3 +1,18 @@
+header {
+    position: relative; /* Default state */
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: top 0.3s ease-in-out; /* Smooth transition */
+}
+
+header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: top 1.3s ease-in-out; /* Smooth transition */
+}
+
 
 .header-top {
     padding: 0 10%;
@@ -109,16 +124,27 @@ details#menu > ul > li > a:active {
     right: 0;
     top: 75px;
     padding: 0 30px;
-    display: none; 
-    z-index: 1000;
-}
-nav ul li:hover .megamenu {
+    height: 0;
+    overflow: hidden;
     display: block;
+    opacity: 0;
+    transition: height 0.5s ease-in-out, opacity 0.8s ease-in-out;
+    z-index: 1000;
 }
 .megamenu-row {
     display: flex;
     justify-content: space-between;
 }
+nav ul li:hover .megamenu {
+    height: auto;
+    opacity: 1;
+}
+nav ul li .megamenu {
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Smooth transition on hover end */
+    height: 0;
+    opacity: 0;
+}
+
 .megamenu h4{
     color: var(--color-violet);
     font-weight: bold;
@@ -195,26 +221,27 @@ nav ul li:hover .megamenu {
 
 
 /* Media Queries for responsiveness */
-@media (max-width: 587px) {
-    details[open]#menu>ul {
-        position: absolute !important;
-    }
-}
-
 @media (max-width: 1052px) {
     details#menu summary {
         display: block;
     }
 
-    details[open]#menu ul {
+    details[open]#menu > ul {
         font-size: 13.4px;
         display: flex;
         top: 87px;
         justify-content: flex-start;
+        position: absolute !important;
     }
 
     .megamenu h4 {
         top: 0;
+    }
+
+    .megamenu {
+        top: 75px;
+        left: 0;
+        right: 0;
     }
 }
 
