@@ -73,15 +73,18 @@ details#menu summary {
 }
 
 /* Style the dropdown links */
-details[open]#menu > ul {
-    list-style-type: none;
-    position: absolute;
-    background-color: white;
+details[open]#menu>ul {
+    right: 0;
     width: 100%;
-    height: 0;
+    list-style-type: none;
+    background-color: white;
     transition: all 1s ease;
-    padding-right: 28%;
-    top: 50px;
+
+    z-index: 1000;
+    width: 100%;
+    position: relative;
+    left: 0;
+    right: 0;
 }
 
 details#menu > ul >  li > a {
@@ -106,7 +109,6 @@ details#menu > ul > li > a:active {
     right: 0;
     top: 75px;
     padding: 0 30px;
-    /* display: block;  */
     display: none; 
     z-index: 1000;
 }
@@ -120,6 +122,8 @@ nav ul li:hover .megamenu {
 .megamenu h4{
     color: var(--color-violet);
     font-weight: bold;
+    position: relative;
+    top: 40px;
 }
 .megamenu ul{
     position: absolute;
@@ -191,6 +195,12 @@ nav ul li:hover .megamenu {
 
 
 /* Media Queries for responsiveness */
+@media (max-width: 587px) {
+    details[open]#menu>ul {
+        position: absolute !important;
+    }
+}
+
 @media (max-width: 1052px) {
     details#menu summary {
         display: block;
@@ -201,6 +211,10 @@ nav ul li:hover .megamenu {
         display: flex;
         top: 87px;
         justify-content: flex-start;
+    }
+
+    .megamenu h4 {
+        top: 0;
     }
 }
 

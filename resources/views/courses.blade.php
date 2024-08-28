@@ -46,7 +46,7 @@
             <section class="detail">
                 <div class="row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                        <div class="card">
+                        <div class="card"style="pointer-events: none">
                             <div class="card-body">
                                 <h2 class="card-title">Formations Certifiantes</h2>
                                 <p class="card-text">                            
@@ -66,7 +66,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 mb-3 mb-sm-0">
-                        <div class="card">
+                        <div class="card"style="pointer-events: none">
                             <div class="card-body">
                                 <h2 class="card-title">Formations En Ligne</h2>
                                 <p class="card-text">
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card">
+                        <div class="card"style="pointer-events: none">
                             <div class="card-body">
                                 <h2 class="card-title">Formations Professionnelle des Jeunes</h2>
                                 <p class="card-text">

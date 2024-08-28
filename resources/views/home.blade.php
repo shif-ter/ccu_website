@@ -19,9 +19,23 @@
         
         <!-- Responsive-->
         <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
-        
+        <!-- fevicon -->
+        <!-- <link rel="icon" href="images/fevicon.png" type="image/gif" /> -->
 
-        <script src="https://cdn.jsdelivr.net/npm/countup.js@2.0.8/dist/countUp.min.js"></script>
+        <!-- Tweaks for older IEs-->
+        <!-- <link rel="stylesheet" href=""> -->
+        <!-- <link rel="stylesheet" href="{{asset('fontawesome/css/all.css')}}"> -->
+        <!-- <link rel="stylesheet" href="H:/Logs/Shifter/ccu_website/public/fontawesome/css/all.css"> -->
+        <!-- <link rel="stylesheet" href="H:\Logs\Shifter\ccu_website\public\fontawesome\css\all.css"> -->
+        <!-- <link rel="stylesheet" href="{{asset('fontawesome/css/brands.css')}}">
+        <link rel="stylesheet" href="{{asset('fontawesome/css/solid.css')}}"> -->
+        <!-- <link rel="stylesheet" href="{{asset('css/font-awesome.css')}}"> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+
+        <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+        <!-- owl stylesheets --> 
 
         <script src="../js/script.js"></script>
 
@@ -29,8 +43,10 @@
     </head>
 
     <body>
+        
         @include('templates.header')
 
+        
         <div id="carouselExampleFade" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner h-100">
                 <div class="carousel-item active"  data-bs-interval="10000">
@@ -135,9 +151,9 @@
                 <h5>Professors</h5>
             </div>
         </div>
-        
 
-        @include('templates.footer')
+
+        @include('templates.footer') 
 
         <script>
             if (window.innerWidth > 1052) {

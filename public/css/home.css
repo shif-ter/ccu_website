@@ -17,8 +17,6 @@
     width: 100%;
     height: 100%;
     background-color: transparent;
-
-
 }
 
 .text-animation {
@@ -52,7 +50,6 @@
 .text-animation .content {
     padding: 1rem;
     z-index: 5;
-    /* min-height: 10rem; */
     position: relative;
 }
 
@@ -75,9 +72,15 @@
 .main {
     padding-top: 1px;
 }
-.animations .main,
+
 .animations .title {
-    height: 5rem;
+    max-height: 4rem;
+    overflow: hidden;
+}
+
+.animations .main {
+    margin-block: 1rem;
+    max-height: 7rem;
     overflow: hidden;
 }
 
@@ -127,7 +130,6 @@
     }
 }
 
-
 @keyframes text-move {
     from {
         transform: translateY(-100%);
@@ -164,6 +166,83 @@
         height: 100%;
         position: absolute;
         width: 100%;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+    #carouselExampleFade {
+        height: 450px;
+    }
+
+    .carousel-item {
+        height: 450px;
+    }
+
+    .text-animation {
+        margin-left: 4rem;
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    #carouselExampleFade {
+        height: 350px;
+    }
+
+    .carousel-item {
+        height: 350px;
+    }
+
+    .text-animation {
+        margin-left: 2rem;
+        width: 80%;
+        text-align: center;
+        top: 40%;
+        transform: translate(0, -40%);
+    }
+
+    .text-animation .background {
+        background: rgba(255, 255, 255, 0.8);
+    }
+
+    .text-animation .content {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselExampleFade {
+        height: 250px;
+    }
+
+    .carousel-item {
+        height: 250px;
+    }
+
+    .text-animation {
+        margin-left: 0 !important;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .text-animation .content {
+        padding: 0.25rem;
+    }
+
+    .animations .title h2 {
+        font-size: 1.5rem;
+    }
+
+    .animations .main p {
+        font-size: 0.875rem;
+    }
+
+    .animations .button-container button {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
     }
 }
 
