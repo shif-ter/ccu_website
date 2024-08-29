@@ -34,10 +34,10 @@
                         <div class="content"style="padding: 20px 40px">
                             <div class="animations">
                                 <div class="title elt">
-                                    <h2 class="text h2">{{ __('carousel.slide1.title') }}</h2>
+                                    <h2 class="text h2">{{ __('home.carousel.slide1.title') }}</h2>
                                 </div>
                                 <div class="main elt">
-                                    <p class="text">Nous proposons un large éventail de formations conçues pour répondre aux besoins variés du marché du travail et aux aspirations individuelles de chaque étudiant</p>
+                                    <p class="text">{{ __('home.carousel.slide1.main') }}</p>
                                 </div>
 
                                 <div class="button-container">
@@ -57,11 +57,10 @@
                         <div class="content"style="padding: 20px 40px">
                             <div class="animations">
                                 <div class="title elt ">
-                                    <h2 class="text h2">Remise de Diplomes</h2>
+                                    <h2 class="text h2">{{ __('home.carousel.slide2.title') }}</h2>
                                 </div>
                                 <div class="main elt">
-                                    <p class="text">En plus de nos formations présentielles, nous offrons également des programmes en ligne, permettant aux étudiants de poursuivre leurs études à distance sans compromettre la qualité de l'enseignement.
-                                    </p>
+                                    <p class="text">{{ __('home.carousel.slide2.main') }}</p>
                                 </div>
 
                                 <div class="button-container">
@@ -81,11 +80,10 @@
                         <div class="content"style="padding: 20px 40px">
                             <div class="animations">
                                 <div class="title elt ">
-                                    <h2 class="text h2">Aumonerie Aniversitaire</h2>
+                                    <h2 class="text h2">{{ __('home.carousel.slide3.title') }}</h2>
                                 </div>
                                 <div class="main elt">
-                                    <p class="text">L'aumônerie universitaire joue un rôle central dans la vie spirituelle et culturelle de notre campus. Elle offre un espace de recueillement, de réflexion et de rencontre pour tous les membres de la communauté universitaire, quelle que soit leur croyance.
-                                    </p>
+                                    <p class="text">{{ __('home.carousel.slide3.main') }}</p>
                                 </div>
 
                                 <div class="button-container">
@@ -112,22 +110,22 @@
             <div class="counter-item">
                 <i class="fas fa-user-graduate"></i>
                 <div id="students">0</div>
-                <h5>Students</h5>
+                <h5>{{ __('home.counter.item1') }}</h5>
             </div>
             <div class="counter-item">
                 <i class="fas fa-globe"></i>
                 <div id="nationalities">0</div>
-                <h5>Students Nationalties</h5>
+                <h5>{{ __('home.counter.item2') }}</h5>
             </div>
             <div class="counter-item">
                 <i class="fas fa-university"></i>
                 <div id="units">0</div>
-                <h5>Academic Units</h5>
+                <h5>{{ __('home.counter.item3') }}</h5>
             </div>
             <div class="counter-item">
                 <i class="fas fa-chalkboard-teacher"></i>
                 <div id="professors">0</div>
-                <h5>Professors</h5>
+                <h5>{{ __('home.counter.item4') }}</h5>
             </div>
         </div>
 

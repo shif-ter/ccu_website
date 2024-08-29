@@ -32,5 +32,17 @@
     "header.activities": "Autres Activités",
     "header.activities.youth_support": "Accompagnement des Jeunes",
     "header.activities.jrs": "Service Jésuite pour les Réfugiés (JRS)",
-    "header.activities.school_complex": "Complexe Scolaire Pape François"
+    "header.activities.school_complex": "Complexe Scolaire Pape François",
+
+    "home.carousel.btn.title": "Voir Plus",
+    "home.carousel.slide1.title": "Notre Université",
+    "home.carousel.slide1.main": "Nous proposons un large éventail de formations conçues pour répondre aux besoins variés du marché du travail et aux aspirations individuelles de chaque étudiant.",
+    "home.carousel.slide2.title": "Remise de Diplomes",
+    "home.carousel.slide2.main": "En plus de nos formations présentielles, nous offrons également des programmes en ligne, permettant aux étudiants de poursuivre leurs études à distance sans compromettre la qualité de l'enseignement. ",
+    "home.carousel.slide3.title": "Aumonerie Aniversitaire",
+    "home.carousel.slide3.main": "L'aumônerie universitaire joue un rôle central dans la vie spirituelle et culturelle de notre campus. Elle offre un espace de recueillement, de réflexion et de rencontre pour tous les membres de la communauté universitaire, quelle que soit leur croyance.",
+    "home.counter.item1": "Étudiants",
+    "home.counter.item2": "Nationalités des Étudiants",
+    "home.counter.item3": "Unités Académiques",
+    "home.counter.item4": "Enseignants"
 }

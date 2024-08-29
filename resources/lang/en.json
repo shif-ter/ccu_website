@@ -32,5 +32,17 @@
     "header.activities": "Other Activities",
     "header.activities.youth_support": "Youth Support",
     "header.activities.jrs": "Jesuit Refugee Service (JRS)",
-    "header.activities.school_complex": "Pope Francis School Complex"
+    "header.activities.school_complex": "Pope Francis School Complex",
+
+    "home.carousel.btn.title": "Read More",
+    "home.carousel.slide1.title": "Our University",
+    "home.carousel.slide1.main": "We offer a wide range of training courses designed to meet the varied needs of the labor market and the individual aspirations of each student.",
+    "home.carousel.slide2.title": "Graduation Ceremony",
+    "home.carousel.slide2.main": "In addition to our on-campus courses, we also offer online programs, allowing students to pursue their studies remotely without compromising the quality of education.",
+    "home.carousel.slide3.title": "University Chaplaincy",
+    "home.carousel.slide3.main": "The university chaplaincy plays a central role in the spiritual and cultural life of our campus. It offers a space for contemplation, reflection, and meeting for all members of the university community, regardless of their beliefs.",
+    "home.counter.item1": "Students",
+    "home.counter.item2": "Students Nationalties",
+    "home.counter.item3": "Academic Units",
+    "home.counter.item4": "Professors"
 }
