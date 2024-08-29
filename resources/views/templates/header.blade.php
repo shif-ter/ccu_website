@@ -100,9 +100,9 @@
                                 <div class="megamenu-row" style="height: {{ app()->getLocale() == 'en' ? '165px' : '180px' }}">
                                     <div>
                                         <ul>
-                                            <li><a href="#">{{ __('header.chaplaincy.mass') }}</a></li>
-                                            <li><a href="#">{{ __('header.chaplaincy.academic_conferences') }}</a></li>
-                                            <li><a href="#">{{ __('header.chaplaincy.cultural_activities') }}</a></li>
+                                            <li><a href="/chaplaincy">{{ __('header.chaplaincy.mass') }}</a></li>
+                                            <li><a href="/chaplaincy">{{ __('header.chaplaincy.academic_conferences') }}</a></li>
+                                            <li><a href="/chaplaincy">{{ __('header.chaplaincy.cultural_activities') }}</a></li>
                                         </ul>
                                     </div> 
                                 </div>

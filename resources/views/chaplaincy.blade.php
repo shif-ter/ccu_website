@@ -28,10 +28,10 @@
             style="background-image: url('{{asset("images/site/0,3.jpg")}}'); background-position: 0 53%">
             <div class="background-overlayer"></div>
             <div class="inner-header-content">
-                <h1>Aumonerie Universitaire</h1>
+                <h1>{{ __('header.chaplaincy')}}</h1>
                 <div class="inner-header-detail">
                     <a href="/">{{ __('header.home') }}</a>
-                    <p>Aumonerie Universitaire</p>
+                    <p>{{ __('header.chaplaincy')}}</p>
                 </div>
             </div>
 
@@ -39,9 +39,9 @@
 
 
         <div class="main-content text-justify">
-            <p>L'aumônerie universitaire joue un rôle central dans la vie spirituelle et culturelle de notre campus. Elle offre un espace de recueillement, de réflexion et de rencontre pour tous les membres de la communauté universitaire, quelle que soit leur croyance. Des messes régulières sont célébrées, offrant aux étudiants et au personnel l'occasion de se rassembler, de prier et de renforcer leur foi.</p>
+            <p>{{ __('chaplaincy.p1')}}</p>
             </br>
-            <p>Outre les services religieux, l'aumônerie organise également des conférences académiques sur des sujets variés, favorisant le dialogue entre foi et raison, et encourageant une réflexion profonde sur les questions éthiques et spirituelles de notre temps. Enfin, des activités culturelles, incluant des remises de certificats et diplômes, sont également proposées pour célébrer les réalisations académiques et renforcer le lien communautaire.</p>
+            <p>{{ __('chaplaincy.p2')}}</p>
             
             <section class="detail">
                 <div class="row">
@@ -49,7 +49,7 @@
                         <div class="card"style="height: 100%">
                             <img src="images/site/0,3.jpg"style="height: 220px">
                             <div class="card-body card-body2">
-                                <h2 class="card-title">Les Messes</h2>
+                                <h2 class="card-title">{{ __('header.chaplaincy.mass')}}</h2>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         <div class="card"style="height: 100%">
                             <img src="images/site/3,1.jpg"style="height: 220px">
                             <div class="card-body card-body2">
-                                <h2 class="card-title">Conférences Académiques</h2>
+                                <h2 class="card-title">{{ __('header.chaplaincy.academic_conferences')}}</h2>
                             </div>
                         </div>
                     </div>
@@ -68,7 +68,7 @@
                         <div class="card"style="height: 100%">
                             <img src="images/site/3,4.jpg"style="height: 220px">
                             <div class="card-body card-body2">
-                                <h2 class="card-title">Remises des diplômes</h2>
+                                <h2 class="card-title">{{ __('header.chaplaincy.cultural_activities')}}</h2>
                             </div>
                         </div>
                     </div>
@@ -76,14 +76,14 @@
                         <div class="card"style="height: 100%; ">
                             <img src="images/site/3,3.jpg"style="height: 220px">
                             <div class="card-body card-body2">
-                                <h2 class="card-title">Aumonerie Universitaire</h2>
+                                <h2 class="card-title">{{ __('header.chaplaincy')}}</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <h2>Galerie</h2>
+            <h2>{{ __('galery') }}</h2>
             <section class="gallery">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">

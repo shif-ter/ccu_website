@@ -75,7 +75,7 @@
                 </div>
             </section>
 
-            <h2>Galerie</h2>
+            <h2>{{ __('galery') }}</h2>
             <section class="gallery">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">

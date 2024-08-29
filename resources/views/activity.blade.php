@@ -39,17 +39,16 @@
 
 
         <div class="main-content text-justify">
-            <p>Notre université ne se limite pas à l'enseignement académique ; elle s’engage activement dans des initiatives sociales et humanitaires qui touchent les vies au-delà du campus. L'accompagnement des jeunes est l'une de nos priorités, avec des programmes dédiés à leur développement personnel et professionnel. Nous croyons fermement en l'importance de préparer la prochaine génération à être des leaders responsables et des citoyens engagés.</p>
+            <p>{{ __('activities.p1') }}</p>
             </br>
-            <p>En partenariat avec le Service Jésuite pour les Réfugiés (JRS), nous travaillons également à offrir soutien et assistance aux communautés vulnérables, en particulier les réfugiés. Cette collaboration témoigne de notre engagement à la justice sociale et à la dignité humaine. De plus, à travers le Complexe Scolaire Pape François, nous investissons dans l’éducation des jeunes, en leur fournissant les outils nécessaires pour réussir dans un monde en constante évolution.</p>
-            
+            <p>{{ __('activities.p2') }}</p>
             <section class="detail">
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <div class="card"style="height: 100%">
                             <img src="images/site/4,1.jpg"style="height: 220px">
                             <div class="card-body card-body2">
-                                <h2 class="card-title">Accompagnement des jeunes</h2>
+                                <h2 class="card-title">{{ __('header.activities.youth_support') }}</h2>
                             </div>
                         </div>
                     </div>
@@ -57,7 +56,7 @@
                         <div class="card"style="height: 100%">
                             <img src="images/site/4,2.jpg"style="height: 220px">
                             <div class="card-body card-body2">
-                                <h2 class="card-title">Service Jésuite pour les Réfugiés (JRS)</h2>
+                                <h2 class="card-title">{{ __('header.activities.jrs') }}</h2>
                             </div>
                         </div>
                     </div>
@@ -68,7 +67,7 @@
                         <div class="card"style="height: 100%">
                             <img src="images/site/4,3.jpg"style="height: 220px">
                             <div class="card-body card-body2">
-                                <h2 class="card-title">Complexe Scolaire Pape François</h2>
+                                <h2 class="card-title">{{ __('header.activities.school_complex') }}</h2>
                             </div>
                         </div>
                     </div>
@@ -83,7 +82,7 @@
                 </div>
             </section>
 
-            <h2>Galerie</h2>
+            <h2>{{ __('galery') }}</h2>
             <section class="gallery">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
