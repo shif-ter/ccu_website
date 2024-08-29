@@ -23,3 +23,9 @@ Route::get('/chaplaincy', function () {
 Route::get('/activity', function () {
     return view('activity');
 })->name('activity');
+
+
+Route::get('/switch/{lang}', function ($lang) {
+    session(['locale' => $lang]);
+    return redirect()->back();
+})->name('switchLang');

@@ -18,7 +18,9 @@
                 <i class="fa fa-search font16 text-violet"></i>
             </div>
             <div class="w-1/6">
-                <a href="#">ENG</a>
+                <a href="{{ route('switchLang', ['lang' => app()->getLocale() == 'en' ? 'fr' : 'en']) }}">
+                    {{ __('header.eng') }}
+                </a>
             </div>
         </div>
     </div>
@@ -33,36 +35,36 @@
                 <details id="menu" open>
                     <summary><i class="fas fa-bars"></i></summary>
                     <ul>
-                        <li><a href="/">Accueil</a></li>
+                        <li><a href="/">{{ __('header.home') }}</a></li>
                         <li>
-                            <a href="/courses">Nos Formations</a>
+                            <a href="/courses">{{ __('header.courses') }}</a>
                             <div class="megamenu" id="megamenu1" style="width: 900px !important">
                                 <div class="megamenu-row" style="height: 410px">
                                     <div class="col4">
-                                        <h4>Formations Certifiantes</h4>
+                                        <h4>{{ __('header.courses.certified_courses') }}</h4>
                                         <ul>
-                                            <li><a href="/courses">Les cours d’Informatique</a></li>
-                                            <li><a href="/courses">Analyse et Gestion des conflits</a></li>
-                                            <li><a href="/courses">Agents Psycho-sociaux</a></li>
-                                            <li><a href="/courses">Logistique Humanitaire et Transport</a></li>
-                                            <li><a href="/courses">Coordination des Programmes Humanitaires</a></li>
-                                            <li><a href="/courses">Leadership Féminin (neuf modules de formation)</a></li>
-                                            <li><a href="/courses">Opératrice de saisie, Secrétariat Bureautique et Rédaction Administrative</a></li>
-                                            <li><a href="/courses">Langues Anglaise, Française et Sango</a></li>
-                                            <li><a href="/courses">Agence de voyage pour vols aériens – Agents facilitateurs / facilitatrices</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.computer_science') }}</a></li>
+                                            <li style="padding-right: 20px;"><a href="/courses">{{ __('header.courses.certified_courses.conflict_management') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.psycho_social_agents') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.humanitarian_logistics') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.humanitarian_coordination') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.female_leadership') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.data_entry') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.language_courses') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.certified_courses.travel_agency') }}</a></li>
                                         </ul>
                                     </div>
                                     <div class="col4">
-                                        <h4>Formations En Ligne</h4>
+                                        <h4>{{ __('header.courses.online_courses') }}</h4>
                                         <ul>
-                                            <li><a href="/courses">Diplômes Universitaires avec le CERAP-UNIVERSITE JESUITE D’ABIDJAN</a></li>
-                                            <li><a href="/courses">JWL (l’enseignement Jésuite dans le monde)</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.online_courses.university_degrees') }}</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.online_courses.jwl') }}</a></li>
                                         </ul>
                                     </div>
                                     <div class="col4">
-                                        <h4>Formations Professionnelle des Jeunes</h4>
+                                        <h4>{{ __('header.courses.youth_training') }}</h4>
                                         <ul>
-                                            <li><a href="/courses">Apprentissage direct</a></li>
+                                            <li><a href="/courses">{{ __('header.courses.youth_training.direct_apprenticeship') }}</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -70,22 +72,22 @@
                         </li>
                                                 
                         <li>
-                            <a href="/service">Nos Services</a>
+                            <a href="/service">{{ __('header.services') }}</a>
                             <div class="megamenu" id="megamenu2" style="width: 500px !important; left: -150px">
                                 <div class="megamenu-row" style="height: 230px">
                                     <div class="col6">
-                                        <h4>Bibliothèque</h4>
+                                        <h4>{{ __('header.services.library') }}</h4>
                                         <ul>
-                                            <li><a href="#">3500 Livres scientifiques</a></li>
-                                            <li><a href="#">Salle de lecture équipée d’ordinateurs connectés à internet</a></li>
-                                            <li><a href="#">Salle de consultation en ligne</a></li>
-                                            <li><a href="#">Salle d’impression</a></li>
+                                            <li><a href="#">{{ __('header.services.library.scientific_books') }}</a></li>
+                                            <li><a href="#">{{ __('header.services.library.reading_room') }}</a></li>
+                                            <li><a href="#">{{ __('header.services.library.online_consultation') }}</a></li>
+                                            <li><a href="#">{{ __('header.services.library.printing_room') }}</a></li>
                                         </ul>
                                     </div>
                                     <div class="col6">
-                                        <h4>Restauration</h4>
+                                        <h4>{{ __('header.services.food_service') }}</h4>
                                         <ul>
-                                            <li><a href="#">Restauration</a></li>
+                                            <li><a href="#">{{ __('header.services.food_service.restoration') }}</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -93,14 +95,14 @@
                         </li>
                         
                         <li>
-                            <a href="/chaplaincy">L’Aumônerie Universitaire</a>
+                            <a href="/chaplaincy">{{ __('header.chaplaincy') }}</a>
                             <div class="megamenu" id="megamenu3" style="width: 200px !important; left: 0px">
-                                <div class="megamenu-row" style="height: 160px">
+                                <div class="megamenu-row" style="height: {{ app()->getLocale() == 'en' ? '165px' : '180px' }}">
                                     <div>
                                         <ul>
-                                            <li><a href="#">Les Messes</a></li>
-                                            <li><a href="#">Conférences Académiques</a></li>
-                                            <li><a href="#">Activités culturelles et remises des certificats et diplômes</a></li>
+                                            <li><a href="#">{{ __('header.chaplaincy.mass') }}</a></li>
+                                            <li><a href="#">{{ __('header.chaplaincy.academic_conferences') }}</a></li>
+                                            <li><a href="#">{{ __('header.chaplaincy.cultural_activities') }}</a></li>
                                         </ul>
                                     </div> 
                                 </div>
@@ -108,14 +110,14 @@
                         </li>
 
                         <li>
-                            <a href="/activity">Autres activités</a>
+                            <a href="/activity">{{ __('header.activities') }}</a>
                             <div class="megamenu" id="megamenu4" style="width: 200px !important; left: 0px">
-                                <div class="megamenu-row" style="height: 160px">
+                                <div class="megamenu-row" style="height: {{ app()->getLocale() == 'en' ? '140px' : '155px'}};">
                                     <div>
                                         <ul>
-                                            <li><a href="#">Accompagnement des jeunes</a></li>
-                                            <li><a href="#">Service Jésuite pour les Réfugiés (JRS)</a></li>
-                                            <li><a href="#">Complexe Scolaire Pape François</a></li>
+                                            <li><a href="#">{{ __('header.activities.youth_support') }}</a></li>
+                                            <li><a href="#">{{ __('header.activities.jrs') }}</a></li>
+                                            <li><a href="#">{{ __('header.activities.school_complex') }}</a></li>
                                         </ul>
                                     </div> 
                                 </div>

@@ -34,7 +34,7 @@
                         <div class="content"style="padding: 20px 40px">
                             <div class="animations">
                                 <div class="title elt">
-                                    <h2 class="text h2">Notre Université</h2>
+                                    <h2 class="text h2">{{ __('carousel.slide1.title') }}</h2>
                                 </div>
                                 <div class="main elt">
                                     <p class="text">Nous proposons un large éventail de formations conçues pour répondre aux besoins variés du marché du travail et aux aspirations individuelles de chaque étudiant</p>
