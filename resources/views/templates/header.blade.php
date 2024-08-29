@@ -78,16 +78,16 @@
                                     <div class="col6">
                                         <h4>{{ __('header.services.library') }}</h4>
                                         <ul>
-                                            <li><a href="#">{{ __('header.services.library.scientific_books') }}</a></li>
-                                            <li><a href="#">{{ __('header.services.library.reading_room') }}</a></li>
-                                            <li><a href="#">{{ __('header.services.library.online_consultation') }}</a></li>
-                                            <li><a href="#">{{ __('header.services.library.printing_room') }}</a></li>
+                                            <li><a href="/services">{{ __('header.services.library.scientific_books') }}</a></li>
+                                            <li><a href="/services">{{ __('header.services.library.reading_room') }}</a></li>
+                                            <li><a href="/services">{{ __('header.services.library.online_consultation') }}</a></li>
+                                            <li><a href="/services">{{ __('header.services.library.printing_room') }}</a></li>
                                         </ul>
                                     </div>
                                     <div class="col6">
                                         <h4>{{ __('header.services.food_service') }}</h4>
                                         <ul>
-                                            <li><a href="#">{{ __('header.services.food_service.restoration') }}</a></li>
+                                            <li><a href="/services">{{ __('header.services.food_service.restoration') }}</a></li>
                                         </ul>
                                     </div>
                                 </div>

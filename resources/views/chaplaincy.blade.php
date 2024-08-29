@@ -30,7 +30,7 @@
             <div class="inner-header-content">
                 <h1>Aumonerie Universitaire</h1>
                 <div class="inner-header-detail">
-                    <a href="/">Acceuil</a>
+                    <a href="/">{{ __('header.home') }}</a>
                     <p>Aumonerie Universitaire</p>
                 </div>
             </div>

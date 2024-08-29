@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- site metas -->
-        <title>CCU - Autres activités</title>
+        <title>CCU - {{ __('header.activities') }}</title>
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
@@ -28,10 +28,10 @@
             style="background-image: url('{{asset("images/site/4,1.jpg")}}'); background-position: 0 53%">
             <div class="background-overlayer"></div>
             <div class="inner-header-content">
-                <h1>Autres activités</h1>
+                <h1>{{ __('header.activities') }}</h1>
                 <div class="inner-header-detail">
-                    <a href="/">Acceuil</a>
-                    <p>Autres activités</p>
+                    <a href="/">{{ __('header.home') }}</a>
+                    <p>{{ __('header.activities') }}</p>
                 </div>
             </div>
 

@@ -14,11 +14,11 @@
             <div class="col-sm-4 pl-16 pt-16" id="top-footer-content2">
                 <h2>Liens</h2>
                 <ul>
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="/courses">Nos Formations</a></li>
-                    <li><a href="/service">Nos Services</a></li>
-                    <li><a href="/chaplaincy">L’Aumônerie Universitaire</a></li>
-                    <li><a href="/activity">Autres activités</a></li>
+                    <li><a href="/">{{ __('header.home') }}</a></li>
+                    <li><a href="/courses">{{ __('header.courses') }}</a></li>
+                    <li><a href="/service">{{ __('header.services') }}</a></li>
+                    <li><a href="/chaplaincy">{{ __('header.chaplaincy') }}</a></li>
+                    <li><a href="/activity">{{ __('header.activities') }}</a></li>
                 </ul>
             </div>
             <div class="col-sm-4" id="top-footer-content3">

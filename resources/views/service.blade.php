@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- site metas -->
-        <title>CCU - Nos Services</title>
+        <title>CCU - {{ __('header.services') }}</title>
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
@@ -28,10 +28,10 @@
             style="background-image: url('{{asset("images/site/biblio1.jpg")}}'); background-position: 0 53%">
             <div class="background-overlayer"></div>
             <div class="inner-header-content">
-                <h1>Nos Services</h1>
+                <h1>{{ __('header.services') }}</h1>
                 <div class="inner-header-detail">
-                    <a href="/">Acceuil</a>
-                    <p>Nos Services</p>
+                    <a href="/">{{ __('header.home') }}</a>
+                    <p>{{ __('header.services') }}</p>
                 </div>
             </div>
 
@@ -39,22 +39,22 @@
 
 
         <div class="main-content text-justify">
-            <p>L'université met à disposition une variété de services conçus pour soutenir le parcours académique et personnel de chaque étudiant. Notre bibliothèque, riche de plus de 3500 livres scientifiques, est équipée d’ordinateurs connectés à Internet, offrant un espace de recherche et de travail idéal pour approfondir vos connaissances. De plus, nos salles de consultation en ligne et d’impression sont à votre disposition pour faciliter vos travaux académiques et projets de recherche.</p>
+            <p>{{ __('services.p1') }}</p> 
             </br>
-            <p>Nous croyons également qu'un esprit sain réside dans un corps sain. C’est pourquoi nous avons développé des services de restauration de qualité, afin que vous puissiez vous nourrir sainement tout au long de la journée. Que ce soit pour un repas complet ou une pause café, nos installations vous offrent un cadre agréable pour vous détendre et socialiser entre deux cours.</p>
+            <p>{{ __('services.p2') }}</p>
             
             <section class="detail">
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <div class="card"style="pointer-events: none">
                             <div class="card-body">
-                                <h2 class="card-title">Bibliothèque</h2>
+                                <h2 class="card-title">{{ __('header.services.library') }}</h2>
                                 <p class="card-text">                            
                                     <ul>
-                                        <li><a href="#">3500 Livres scientifiques</a></li>
-                                        <li><a href="#">Salle de lecture équipée d’ordinateurs connectés à internet</a></li>
-                                        <li><a href="#">Salle de consultation en ligne</a></li>
-                                        <li><a href="#">Salle d’impression</a></li>
+                                        <li><a href="#">{{ __('header.services.library.scientific_books') }}</a></li>
+                                        <li><a href="#">{{ __('header.services.library.reading_room') }}</a></li>
+                                        <li><a href="#">{{ __('header.services.library.online_consultation') }}</a></li>
+                                        <li><a href="#">{{ __('header.services.library.printing_room') }}</a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -63,10 +63,10 @@
                     <div class="col-sm-6">
                         <div class="card"style="pointer-events: none">
                             <div class="card-body">
-                                <h2 class="card-title">Restauration</h2>
+                                <h2 class="card-title">{{ __('header.services.food_service') }}</h2>
                                 <p class="card-text">
                                     <ul>
-                                        <li><a href="#">Restauration</a></li>
+                                        <li><a href="#">{{ __('header.services.food_service.restoration') }}</a></li>
                                     </ul>
                                 </p>
                             </div>

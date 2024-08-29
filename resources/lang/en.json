@@ -44,5 +44,18 @@
     "home.counter.item1": "Students",
     "home.counter.item2": "Students Nationalties",
     "home.counter.item3": "Academic Units",
-    "home.counter.item4": "Professors"
+    "home.counter.item4": "Professors",
+    
+    "galery": "Galery",
+    "courses.p1" : "We offer a wide range of training programs designed to meet the diverse needs of the job market and the individual aspirations of each student. Our certification programs cover essential areas such as computer science, conflict management, and women's leadership. These programs are designed to provide practical and directly applicable skills, ensuring a quick and successful integration into the professional world.",
+    "courses.p2": "In addition to our in-person training, we also offer online programs, allowing students to pursue their studies remotely without compromising the quality of education. These online programs, developed in partnership with prestigious institutions such as CERAP-Jesuit University of Abidjan and JWL, offer unparalleled flexibility for those wishing to balance studies and personal commitments. Our commitment to training young professionals is also reflected in our direct learning programs, where practical experience is at the heart of the learning process.",
+
+    "services.p1" : "The university provides a variety of services designed to support the academic and personal journey of each student. Our library, rich with over 3,500 scientific books, is equipped with computers connected to the Internet, offering an ideal research and work space to deepen your knowledge. Additionally, our online consultation and printing rooms are available to facilitate your academic work and research projects.",
+    "services.p2" : "We also believe that a healthy mind resides in a healthy body. That’s why we have developed quality dining services, so you can eat healthily throughout the day. Whether for a full meal or a coffee break, our facilities offer a pleasant environment for you to relax and socialize between classes.",
+
+    "chaplaincy.p1" : "The university chaplaincy plays a central role in the spiritual and cultural life of our campus. It offers a space for contemplation, reflection, and meeting for all members of the university community, regardless of their beliefs. Regular masses are celebrated, providing students and staff with the opportunity to gather, pray, and strengthen their faith.",
+    "chaplaincy.p2" : "In addition to religious services, the chaplaincy also organizes academic conferences on various topics, fostering dialogue between faith and reason, and encouraging deep reflection on the ethical and spiritual issues of our time. Finally, cultural activities, including certificate and diploma ceremonies, are also offered to celebrate academic achievements and strengthen community ties.",
+    
+    "activities.p1" : "Our university is not limited to academic teaching; it actively engages in social and humanitarian initiatives that impact lives beyond the campus. Supporting youth is one of our priorities, with programs dedicated to their personal and professional development. We firmly believe in the importance of preparing the next generation to be responsible leaders and engaged citizens.",
+    "activities.p2" : "n partnership with the Jesuit Refugee Service (JRS), we also work to provide support and assistance to vulnerable communities, particularly refugees. This collaboration reflects our commitment to social justice and human dignity. Furthermore, through the Pope Francis School Complex, we invest in the education of young people, providing them with the necessary tools to succeed in an ever-changing world."
 }

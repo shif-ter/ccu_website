@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <!-- site metas -->
-        <title>CCU - Nos Formations</title>
+        <title>CCU - {{ __('header.courses') }}</title>
 
         <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
@@ -28,11 +28,11 @@
             style="background-image: url('{{asset("images/site/4,4.jpg")}}'); background-position: 0 53%">
             <div class="background-overlayer"></div>
             <div class="inner-header-content">
-                <h1>Nos Formations</h1>
+                <h1>{{ __('header.courses') }}</h1>
                 <div class="inner-header-detail">
-                    <a href="/">Acceuil</a> 
+                    <a href="/">{{ __('header.home') }}</a> 
                     <!-- <span class="fa fa-angle-right"></span> -->
-                    <p>Nos Formations</p>
+                    <p>{{ __('header.courses') }}</p>
                 </div>
             </div>
 
@@ -40,26 +40,26 @@
 
 
         <div class="main-content text-justify">
-            <p>Nous proposons un large éventail de formations conçues pour répondre aux besoins variés du marché du travail et aux aspirations individuelles de chaque étudiant. Nos formations certifiantes couvrent des domaines essentiels comme l'informatique, la gestion des conflits, et le leadership féminin. Ces programmes sont pensés pour offrir des compétences pratiques et directement applicables, garantissant ainsi une insertion rapide et réussie dans le monde professionnel.</p>
+            <p>{{ __('courses.p1') }}</p>
             </br>
-            <p>En plus de nos formations présentielles, nous offrons également des programmes en ligne, permettant aux étudiants de poursuivre leurs études à distance sans compromettre la qualité de l'enseignement. Ces formations en ligne, développées en partenariat avec des institutions prestigieuses comme le CERAP-Université Jésuite d’Abidjan et le JWL, offrent une flexibilité sans pareille pour ceux qui souhaitent concilier études et engagements personnels. Notre engagement à former les jeunes professionnels se reflète également dans nos programmes d’apprentissage direct, où l'expérience pratique est au cœur de l'apprentissage.</p>
+            <p>{{ __('courses.p2') }}</p>
             <section class="detail">
                 <div class="row">
                     <div class="col-sm-4 mb-3 mb-sm-0">
                         <div class="card"style="pointer-events: none">
                             <div class="card-body">
-                                <h2 class="card-title">Formations Certifiantes</h2>
+                                <h2 class="card-title">{{ __('header.courses.certified_courses') }}</h2>
                                 <p class="card-text">                            
                                     <ul>
-                                        <li><a href="#">Les cours d’Informatique</a></li>
-                                        <li><a href="#">Analyse et Gestion des conflits</a></li>
-                                        <li><a href="#">Agents Psycho-sociaux</a></li>
-                                        <li><a href="#">Logistique Humanitaire et Transport</a></li>
-                                        <li><a href="#">Coordination des Programmes Humanitaires</a></li>
-                                        <li><a href="#">Leadership Féminin (neuf modules de formation)</a></li>
-                                        <li><a href="#">Opératrice de saisie, Secrétariat Bureautique et Rédaction Administrative</a></li>
-                                        <li><a href="#">Langues Anglaise, Française et Sango</a></li>
-                                        <li><a href="#">Agence de voyage pour vols aériens – Agents facilitateurs / facilitatrices</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.computer_science') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.conflict_management') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.psycho_social_agents') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.humanitarian_logistics') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.humanitarian_coordination') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.female_leadership') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.data_entry') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.language_courses') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.certified_courses.travel_agency') }}</a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -68,11 +68,11 @@
                     <div class="col-sm-4 mb-3 mb-sm-0">
                         <div class="card"style="pointer-events: none">
                             <div class="card-body">
-                                <h2 class="card-title">Formations En Ligne</h2>
+                                <h2 class="card-title">{{ __('header.courses.online_courses') }}</h2>
                                 <p class="card-text">
                                     <ul>
-                                        <li><a href="#">Diplômes Universitaires avec le CERAP-UNIVERSITE JESUITE D’ABIDJAN</a></li>
-                                        <li><a href="#">JWL (l’enseignement Jésuite dans le monde)</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.online_courses.university_degrees') }}</a></li>
+                                        <li><a href="/courses">{{ __('header.courses.online_courses.jwl') }}</a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -81,10 +81,10 @@
                     <div class="col-sm-4">
                         <div class="card"style="pointer-events: none">
                             <div class="card-body">
-                                <h2 class="card-title">Formations Professionnelle des Jeunes</h2>
+                                <h2 class="card-title">{{ __('header.courses.youth_training') }}</h2>
                                 <p class="card-text">
                                     <ul>
-                                        <li><a href="#">Apprentissage direct</a></li>
+                                        <li><a href="#">{{ __('header.courses.youth_training.direct_apprenticeship') }}</a></li>
                                     </ul>
                                 </p>
                             </div>
@@ -93,7 +93,7 @@
                 </div>
             </section>
 
-            <h2>Galerie</h2>
+            <h2>{{ __('galery') }}</h2>
             <section class="gallery">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
