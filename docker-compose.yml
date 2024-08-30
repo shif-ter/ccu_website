@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ccu-bangui
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    networks:
+      - laravel
+  #   environment:
+  #     - DB_CONNECTION=pgsql
+  #     - DB_HOST=database
+  #     - DB_PORT=5432
+  #     - DB_DATABASE=ccu_website
+  #     - DB_USERNAME=root
+  #     - DB_PASSWORD=
+
+  # database:
+  #   image: postgres:13
+  #   container_name: postgres_db
+  #   restart: unless-stopped
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+  #   networks:
+  #     - laravel
+  #   environment:
+  #     POSTGRES_DB: ccu_website
+  #     POSTGRES_USER: root
+  #     POSTGRES_PASSWORD: 
+
+networks:
+  laravel:
+
+# volumes:
+#   pgdata:
