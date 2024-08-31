@@ -7,10 +7,9 @@ RUN apt-get update -y && apt-get install -y \
     unzip \
     git \
     nodejs \
-    npm
-
-# Install PHP extensions
-RUN docker-php-ext-install mbstring
+    npm \
+    libonig-dev \
+    && docker-php-ext-install mbstring
 
 # Install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
