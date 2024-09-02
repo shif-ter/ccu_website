@@ -66,6 +66,8 @@
 }
 .card img {
     transform-origin: center bottom;
+    object-fit: cover;
+    object-position: 50% 35%;
 }
 .card img:hover {
     transform: scale(1.2);

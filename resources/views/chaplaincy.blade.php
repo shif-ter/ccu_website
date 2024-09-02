@@ -66,7 +66,7 @@
                 <div class="row">
                     <div class="col-sm-6 mb-3 mb-sm-0">
                         <div class="card"style="height: 100%">
-                            <img src="images/site/3,4.jpg"style="height: 220px">
+                            <img src="images/site/3,4.jpg"style="height: 220px; object-position: 50% 85%">
                             <div class="card-body card-body2">
                                 <h2 class="card-title">{{ __('header.chaplaincy.cultural_activities')}}</h2>
                             </div>

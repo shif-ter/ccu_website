@@ -8,7 +8,7 @@
                     <li><i class="fas fa-inbox"></i>2931 BANGUI – République Centrafricaine</li>
                     <li><i class="fas fa-phone"></i>(+236)75 07 15 12 / 72 87 00 73 / 70 70 99 91</li>
                     <li><i class="fas fa-envelope"></i>info@ccubangui.com</li>
-                    <li><i class="fas fa-globe"></i>www.ccubangui</li>
+                    <li><i class="fas fa-globe"></i>www.ccubangui.com</li>
                 </ul>
             </div>
             <div class="col-sm-4 pl-16 pt-16" id="top-footer-content2">
