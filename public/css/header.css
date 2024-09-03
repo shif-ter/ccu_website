@@ -284,3 +284,12 @@ nav ul li .megamenu {
         display: block;
     }
 }
+
+@media (max-width: 576px) {
+    .megamenu{
+        display: none !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+}

@@ -80,6 +80,11 @@
 }
 .card-body2 h2 {
     font-weight: 700;
+    display: -webkit-box; /* For Safari */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis */
 }
 .card-body2 {
     height: 70px;
@@ -105,7 +110,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 576px) {
     .carousel-item{
         height: 270px;
     }

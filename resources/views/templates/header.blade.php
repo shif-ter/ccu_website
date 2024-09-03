@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-<header>
+<header style="top:0">
     <!-- Top Navbar -->
     <div class="header-top bg-violet text-gray-400 font-bold pt-2 pb-2 justify-between items-center">
         <div class="flex">

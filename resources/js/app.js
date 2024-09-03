@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // STICKY SCROLL
+
 document.addEventListener("DOMContentLoaded", function () { 
     var header = document.querySelector("header");
     var body = document.getElementById("carouselExampleFade");
@@ -47,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (currentScrollPos <= 150) {
             header.style.position = "relative";
-            header.style.top = "0";
         } else {
             header.style.position = "fixed";
             header.style.top = "";
@@ -58,8 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        prevScrollPos = currentScrollPos;    
-        console.log("Scroll Position:", window.pageYOffset);
+        prevScrollPos = currentScrollPos;
     });
 });
 
