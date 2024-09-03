@@ -27,11 +27,11 @@
         
         <div id="carouselExampleFade" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner h-100">
-                <div class="carousel-item active"  data-bs-interval="5000">
+                <div class="carousel-item active c-i"  data-bs-interval="5000">
                     <div class="black-background"></div>
                     <div class="text-animation">
                         <div class="background"></div>
-                        <div class="content"style="padding: 20px 40px">
+                        <div class="content">
                             <div class="animations">
                                 <div class="title elt">
                                     <h2 class="text h2">{{ __('home.carousel.slide1.title') }}</h2>
@@ -50,11 +50,11 @@
                     <div class="black-background"></div>
                     <img src="/images/site/0,1.jpg" class="d-block w-100" alt="Notre Université">
                 </div>
-                <div class="carousel-item"  data-bs-interval="5000">
+                <div class="carousel-item c-i"  data-bs-interval="5000">
                     <div class="black-background"></div>
                     <div class="text-animation">
                         <div class="background"></div>
-                        <div class="content"style="padding: 20px 40px">
+                        <div class="content">
                             <div class="animations">
                                 <div class="title elt ">
                                     <h2 class="text h2">{{ __('home.carousel.slide2.title') }}</h2>
@@ -73,11 +73,11 @@
                     <img src="/images/site/0,2.jpg" class="d-block w-100"
                         alt="Remise de Diplomes.jpg">
                 </div>
-                <div class="carousel-item"  data-bs-interval="5000">
+                <div class="carousel-item c-i"  data-bs-interval="5000">
                     <div class="black-background"></div>
                     <div class="text-animation">
                         <div class="background"></div>
-                        <div class="content"style="padding: 20px 40px">
+                        <div class="content">
                             <div class="animations">
                                 <div class="title elt ">
                                     <h2 class="text h2">{{ __('home.carousel.slide3.title') }}</h2>

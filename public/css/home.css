@@ -48,7 +48,7 @@
 }
 
 .text-animation .content {
-    padding: 1rem;
+    padding: 20px 40px;
     z-index: 5;
     position: relative;
 }
@@ -228,27 +228,28 @@
 
 @media (max-width: 576px) {
     #carouselExampleFade {
-        height: 250px;
+        height: 300px;
     }
 
-    .carousel-item {
-        height: 250px;
+    .c-i {
+        height: 300px !important;
     }
 
     .text-animation {
         margin-left: 0 !important;
         width: 80%;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .text-animation .content {
-        padding: 0.25rem;
+        padding: 20px 25px;
     }
 
     .animations .title h2 {
         font-size: 1.3rem;
+        line-height: 1.2;
     }
 
     .animations .main p {
@@ -258,6 +259,9 @@
     .animations .button-container button {
         font-size: 0.875rem;
         padding: 0.5rem 1rem;
+    }
+    .animations .button-container {
+        height: auto
     }
 }
 
