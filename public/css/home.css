@@ -78,6 +78,12 @@
     overflow: hidden;
 }
 
+@media (max-width: 576px) {
+    .animations .title {
+        max-height: 3rem;
+    }
+}
+
 .animations .main {
     margin-block: 1rem;
     max-height: 7rem;
@@ -242,7 +248,7 @@
     }
 
     .animations .title h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .animations .main p {

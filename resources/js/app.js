@@ -37,24 +37,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // STICKY SCROLL
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { 
     var header = document.querySelector("header");
-    // var body = document.getElementById("carouselExampleFade");
+    var body = document.getElementById("carouselExampleFade");
     var prevScrollPos = window.pageYOffset;
 
     window.addEventListener("scroll", function () {
         var currentScrollPos = window.pageYOffset;
 
-        if (prevScrollPos > currentScrollPos) {
-            header.classList.remove("sticky");
-            // body.style.marginTop = "0";
+        if (currentScrollPos <= 150) {
+            header.style.position = "relative";
+            header.style.top = "0";
         } else {
-            header.classList.add("sticky");
-            // body.style.marginTop = "155px";
+            header.style.position = "fixed";
+            header.style.top = "";
+            if (prevScrollPos < currentScrollPos) {
+                header.classList.remove("sticky");
+            } else {
+                header.classList.add("sticky");
+            }
         }
-        prevScrollPos = currentScrollPos;
+
+        prevScrollPos = currentScrollPos;    
+        console.log("Scroll Position:", window.pageYOffset);
     });
 });
+
 
 
 // CAROUSEL

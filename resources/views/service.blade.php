@@ -115,6 +115,8 @@
         <script>
             if (window.innerWidth > 1052) {
                 document.getElementById("menu").setAttribute("open", "open");
+            } else {
+                document.getElementById("menu").removeAttribute("open");
             }
         </script>
         <!-- <script src="bootstrap/js/bootstrap.bundle.min.js"></script>

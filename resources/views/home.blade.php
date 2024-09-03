@@ -27,7 +27,7 @@
         
         <div id="carouselExampleFade" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner h-100">
-                <div class="carousel-item active"  data-bs-interval="4000">
+                <div class="carousel-item active"  data-bs-interval="5000">
                     <div class="black-background"></div>
                     <div class="text-animation">
                         <div class="background"></div>
@@ -50,7 +50,7 @@
                     <div class="black-background"></div>
                     <img src="/images/site/0,1.jpg" class="d-block w-100" alt="Notre Université">
                 </div>
-                <div class="carousel-item"  data-bs-interval="4000">
+                <div class="carousel-item"  data-bs-interval="5000">
                     <div class="black-background"></div>
                     <div class="text-animation">
                         <div class="background"></div>
@@ -73,7 +73,7 @@
                     <img src="/images/site/0,2.jpg" class="d-block w-100"
                         alt="Remise de Diplomes.jpg">
                 </div>
-                <div class="carousel-item"  data-bs-interval="4000">
+                <div class="carousel-item"  data-bs-interval="5000">
                     <div class="black-background"></div>
                     <div class="text-animation">
                         <div class="background"></div>
@@ -135,6 +135,8 @@
         <script>
             if (window.innerWidth > 1052) {
                 document.getElementById("menu").setAttribute("open", "open");
+            }else {
+                document.getElementById("menu").removeAttribute("open");
             }
         </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -66,5 +66,28 @@ footer {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin: 0 7px;
-    color: var(--color-grey);
+    color: var(--color-grey);    
+}
+
+
+@media (max-width: 1020px) {
+    .top-footer > .row {
+        margin: 6% 0;
+    }
+    
+    #top-footer-content2 {
+        padding-left: 11px;
+        padding-top: 35px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+    .bottom-footer {
+        display: block;
+        line-height: 1.5;
+    }
+    .bottom-footer > p:not(:last-child)::after {
+        content: '';
+    }
 }
