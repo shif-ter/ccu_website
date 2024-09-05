@@ -7,60 +7,111 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# CCU Website
 
-## Learning Laravel
+This is a Laravel-based web application for the **Centre Catholique Universitaire (CCU)**, built using **Tailwind CSS** and **JavaScript**. This project does not use a database.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Features
+- Laravel framework
+- Vite for asset bundling
+- Tailwind CSS for styling
+- JavaScript for frontend interactivity
+- No database
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Prerequisites
+Before running this project, ensure that you have the following installed:
+- [PHP 8.1+](https://www.php.net/)
+- [Composer](https://getcomposer.org/)
+- [Node.js & npm](https://nodejs.org/en/)
+- [Git](https://git-scm.com/)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Installation
 
-## Laravel Sponsors
+Follow these steps to get the project up and running:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 1. Clone the Repository
 
-### Premium Partners
+```bash
+git clone https://github.com/mr-tchounga/ccu_website.git
+cd ccu_website
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### 2. Install PHP Dependencies
 
-## Contributing
+Install Laravel and other PHP dependencies using Composer:
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+composer install
+```
 
-## Code of Conduct
+If you don't have Composer installed, follow [this guide](https://getcomposer.org/doc/00-intro.md) to install it.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### 3. Install Node Dependencies
 
-## Security Vulnerabilities
+You will need to install the required JavaScript packages, including **Tailwind CSS** and **Vite** for compiling assets:
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```bash
+npm install
+```
+
+### 4. Compile CSS and JavaScript
+
+You can now compile the frontend assets (CSS and JS) with Vite:
+
+```bash
+npm run dev
+```
+
+Alternatively, you can run:
+
+```bash
+npm run build
+```
+To compile assets for production.
+
+### 5. Set Application Key
+
+Generate the application key:
+
+```bash
+php artisan key:generate
+```
+
+### 6. Serve the Application
+
+You can serve the application locally using the built-in Laravel server:
+
+```bash
+php artisan serve
+```
+
+The website will now be accessible at `http://localhost:8000`.
+
+## Additional Information
+
+### Vite Configuration
+
+Vite is used for bundling the assets. If you face issues while running the `npm` or `composer` commands, ensure that Vite is correctly installed and integrated with Laravel. You can find more details about Vite in the [official documentation](https://laravel.com/docs/10.x/vite).
+
+### Tailwind CSS
+
+Tailwind CSS is used for styling the front end. You can modify styles in the `resources/css` directory. Ensure that any changes are recompiled using:
+
+```bash
+npm run dev
+```
+
+### Composer Command Support
+
+If you run into any issues where Composer commands (like `composer install`) fail, ensure that Composer is correctly installed and available globally in your environment. You can check this with:
+
+```bash
+composer --version
+```
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

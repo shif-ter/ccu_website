@@ -1,34 +1,38 @@
-# Use the official PHP image as a base image
-FROM php:8.2-fpm
+# Use the official PHP image with Apache
+FROM php:8.1-apache
 
-# Install necessary dependencies
-RUN apt-get update -y && apt-get install -y \
-    zip \
-    unzip \
-    git \
-    nodejs \
-    npm \
-    libonig-dev \
-    && docker-php-ext-install mbstring
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd
 
-# Install Composer globally
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+# Enable Apache mod_rewrite
+RUN a2enmod rewrite
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /var/www/html
 
-# Copy the application code
-COPY . /app
+# Copy the application files
+COPY . .
+
+# Install Composer
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Install PHP dependencies
-RUN composer install
+RUN composer install --no-interaction --prefer-dist
 
-# Install Node.js dependencies and build assets with Vite
-RUN npm install
-RUN npm run build
+# Install Node.js and npm
+RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs
 
-# Expose the port 8000
-EXPOSE 8000
+# Install npm dependencies and build assets
+RUN npm install && npm run build
 
-# Default command
-CMD php artisan serve --host=0.0.0.0 --port=8000
+# Expose port 80
+EXPOSE 80
+
+# Start the Apache server
+CMD ["apache2-foreground"]
